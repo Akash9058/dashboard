@@ -1,0 +1,15 @@
+.charts {
+    flex: 4;
+    box-shadow: 2px 4px 10px 2px rgba(188, 181, 181, 0.47);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    .chartTitle{
+        border-left: 20px solid rgb(182, 227, 142);
+            font-size: 25px;
+            padding-left: 8px;
+            margin: 6px;
+            border-radius: 7px;
+    }
+}

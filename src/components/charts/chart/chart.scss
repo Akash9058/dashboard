@@ -1,0 +1,47 @@
+.chart{
+    padding: 5px;
+  
+  
+        .header{
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            margin-bottom: 20px;
+
+            .title{
+                display: flex;
+                align-items: center;
+
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    color: rgb(141, 139, 139);
+                    padding: 5px;
+                }
+            }
+
+            .bottom{
+                display: flex;
+                // padding: 5px;
+                align-items: center;
+
+                .icons{
+                    display: flex;
+                    align-items: center;
+                    padding: 1px;
+                    color: green;
+                    background-color: rgb(199, 228, 199);
+                    border-radius: 5px;
+                    p{
+                        padding: 3px;;
+                    }
+                }
+                p{
+                    padding: 3px;
+                }
+            }
+        }
+    
+    
+}

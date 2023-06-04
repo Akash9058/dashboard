@@ -4,7 +4,7 @@ import { Sidebar } from "../../components/sidebar/sidebar";
 import "./home.scss";
 import React from "react";
 import { Featured } from "../../components/featured/featured";
-import { Chart } from "../../components/chart/chart";
+import { Chart, Charts } from "../../components/charts/charts";
 
 export const Home = () => {
   return (
@@ -51,8 +51,8 @@ export const Home = () => {
               tiniColor="black"
             />
           </div>
-          <div className="charts">
-            <Chart /> 
+          <div className="chartes">
+            <Charts /> 
             <Featured />
           </div>
         </div>

@@ -14,7 +14,7 @@ export const Stats = (props) => {
         <div className="title">{props.title}</div>
         <div className="subTitle">{props.subTitle}</div>
         <div className="skillProgress">
-          <div className="fill"></div>
+          <div className="fill" style={{width:props.width}} ></div>
         </div>
       </div>
       <div

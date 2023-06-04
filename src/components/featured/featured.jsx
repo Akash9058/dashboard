@@ -17,7 +17,8 @@ export const Featured = () => {
           color="rgba(218,210,226,1)"
           tiniColor="#e8cdff"
           iconColor="#ae7fde"
-          icon=<Diamond/>
+          icon=<Diamond />
+          width="50%"
         />
         <Stats
           title="Jewelary items"
@@ -26,7 +27,8 @@ export const Featured = () => {
           color="rgba(255,252,241,1)"
           tiniColor="#ffeeb9"
           iconColor="#dcaf3a"
-          icon=<Interests/>
+          icon=<Interests />
+          width="70%"
         />
         <Stats
           title="Home & Living"
@@ -36,6 +38,7 @@ export const Featured = () => {
           tiniColor="#cdf0ff"
           iconColor="#63a8cf"
           icon=<Cyclone />
+          width="90%"
         />
         <Stats
           title="Electronic items"
@@ -44,7 +47,8 @@ export const Featured = () => {
           color="rgba(233,234,244,1)"
           tiniColor="#c9cdec"
           iconColor="#7877e7"
-          icon=<Eject/>
+          icon=<Eject />
+          width="40%"
         />
       </div>
     </div>
