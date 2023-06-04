@@ -12,7 +12,7 @@ export const Navbar = () => {
       <div className="wrapper">
         <div className="search">
           <Search />
-          <input type="text" placeholder="Search Dashboard" />
+          <input  type="text" placeholder="Search Dashboard" />
         </div>
         <div className="items">
           <div className="item">

@@ -1,0 +1,39 @@
+.featured{
+    flex:2;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 2px rgba(8, 8, 8, 0.47);
+    padding: 10px;
+    border-radius: 5px;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+        .title{
+            border-left: 20px solid rgb(182, 227, 142);
+            font-size: 25px;
+            padding-left: 8px;
+            border-radius: 7px;
+        }
+        .detail{
+            font-size: 18px;
+            padding-right: 5px;
+            cursor: pointer;
+            color: blue;
+        }
+    }
+    .states{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        
+            :hover {
+                // background-color: #554ab4;
+                border-radius: 4px;
+                
+                // color: white;
+            }
+    }
+}                
