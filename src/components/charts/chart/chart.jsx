@@ -1,14 +1,16 @@
 import React from 'react'
 import './chart.scss';
 import {
-  AreaChart,
-  Area,
+  LineChart,
+  Line,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
+  
   ResponsiveContainer,
 } from "recharts";
+
 import { ArrowUpward } from '@mui/icons-material';
 
 
@@ -63,13 +65,8 @@ export const Chart = () => {
           <p>vs. Previous Week</p>
         </div>
       </div>
-      <ResponsiveContainer width="100%" aspect={3/ 1}>
-        <AreaChart
-          width={0}
-          height={60}
-          data={data}
-          margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
-        >
+      <ResponsiveContainer aspect={3 / 1}>
+        <LineChart data={data}>
           <defs>
             <linearGradient id="total" x1="0" y1="0" x2="0" y2="1">
               <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
@@ -78,16 +75,17 @@ export const Chart = () => {
           </defs>
           <XAxis dataKey="name" stroke="grey" />
           <YAxis  ></YAxis>
-          <CartesianGrid strokeDasharray="6 6" />
+          <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
-          <Area
+          {/* <Legend /> */}
+          <Line
             type="monotone"
             dataKey="total"
             stroke="blue"
             fillOpacity={1}
             fill="url(#total)"
           />
-        </AreaChart>
+        </LineChart>
       </ResponsiveContainer>
     </div>
   );

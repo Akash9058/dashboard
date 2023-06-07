@@ -4,7 +4,8 @@ import { Sidebar } from "../../components/sidebar/sidebar";
 import "./home.scss";
 import React from "react";
 import { Featured } from "../../components/featured/featured";
-import { Chart, Charts } from "../../components/charts/charts";
+import {  Charts } from "../../components/charts/charts";
+import { Dropdown } from "../dropdown";
 
 export const Home = () => {
   return (
@@ -13,7 +14,9 @@ export const Home = () => {
       <div className="homeContainer">
         <Navbar />
         <div className="widgetContainer">
+          <div className="header">
             <h3>Listing overview</h3>
+            <Dropdown /></div>
           <div className="widgets">
             <Widget
               title="Active listings"
@@ -54,7 +57,9 @@ export const Home = () => {
           <div className="chartes">
             <Charts /> 
             <Featured />
+           
           </div>
+          
         </div>
       </div>
     </div>
